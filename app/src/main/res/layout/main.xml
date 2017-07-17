@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:hyman="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zqw.appmanger.MainActivity">
+    <com.zqw.appmanger.view.SildingMenu
+        android:id="@+id/left_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        hyman:rightPadding="75dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <include layout="@layout/left_menu"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="#fb739a">
+
+                </android.support.v7.widget.Toolbar>
+
+                <LinearLayout
+                    android:id="@+id/top"
+                    android:orientation="horizontal"
+                    android:padding="5dp"
+                    android:background="@color/background"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/toolbar">
+
+
+                    <TextView
+                        android:id="@+id/tv_sort"
+                        android:text="排序："
+                        android:textColor="@color/text_all"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/tv_size"
+                        android:text="应用数："
+                        android:textColor="@color/text_all"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <com.zqw.appmanger.view.RefreshView
+                    android:id="@+id/headerView"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_below="@id/top">
+                    <!--listview的标签-->
+                    <ListView
+                        android:id="@+id/lv_main"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:divider="#cbcbcb"
+                        android:dividerHeight="0.2dp"
+                        android:listSelector="@drawable/item_selector"
+                        android:layout_below="@id/top"
+                        />
+                </com.zqw.appmanger.view.RefreshView>
+            </LinearLayout>
+         </LinearLayout>
+    </com.zqw.appmanger.view.SildingMenu>
+
+</RelativeLayout>

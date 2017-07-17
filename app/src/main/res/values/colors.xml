@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#fb739a</color>
+    <color name="colorPrimaryDark">#7c89d9</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="trans">#00000000</color>
+    <color name="choose">#d8d9d9</color>
+    <color name="btn1">#52c7ed</color>
+    <color name="btn2">#229eaf</color>
+    <color name="text_all">#4f4f4f</color>
+    <color name="background">#eaeaea</color>
+    <color name="left_menu_item_textcolos">#eaeaea</color>
+
+
+</resources>

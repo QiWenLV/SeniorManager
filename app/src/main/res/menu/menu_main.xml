@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_search"
+        android:icon="@drawable/title_search_normal"
+        android:title="搜索"
+        app:showAsAction="ifRoom|collapseActionView"
+        app:actionViewClass="android.support.v7.widget.SearchView"/>
+
+    <item
+        android:id="@+id/sort_name"
+        android:orderInCategory="100"
+        android:title="按名称排序"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/sort_date"
+        android:orderInCategory="101"
+        android:title="按日期排序"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/sort_size"
+        android:orderInCategory="102"
+        android:title="按大小排序"
+        android:showAsAction="never"/>
+    <item
+        android:id="@+id/about"
+        android:orderInCategory="103"
+        android:title="关于"
+        android:showAsAction="never"/>
+</menu>
